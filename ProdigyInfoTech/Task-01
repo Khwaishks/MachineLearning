@@ -1,2 +1,27 @@
 Task-01
 Implement a linear regression model to predict the prices of houses based on their square footage and the number of bedrooms and bathrooms.
+
+Multiple linear regression is a statistical technique used to model the relationship between a single dependent variable and multiple independent variables. It extends the concept of simple linear regression,
+which deals with a single predictor variable and a single outcome variable. In multiple linear regression,aim to find a linear equation that best represents how the dependent variable is influenced by multiple
+independent variables.
+The general form of multiple linear regression is:
+\[Y = \beta_0 + \beta_1X_1 + \beta_2X_2 + \ldots + \beta_nX_n + \epsilon\]
+
+Here's what each term represents:
+- \(Y\) is the dependent variable you want to predict.
+- \(X_1, X_2, \ldots, X_n\) are the independent variables or predictors.
+- \(\beta_0\) is the intercept (the value of \(Y\) when all \(X\) values are zero).
+- \(\beta_1, \beta_2, \ldots, \beta_n\) are the coefficients, which represent the change in \(Y\) for a one-unit
+change in the corresponding \(X\) variable, holding all other variables constant.
+- \(\epsilon\) is the error term, representing the difference between the predicted and actual values of \(Y\).
+
+Here are some key concepts associated with multiple linear regression:
+1. Ordinary Least Squares (OLS): The goal of multiple linear regression is to find the values of \(\beta_0,\beta_1, \ldots, \beta_n\) 
+that minimize the sum of squared differences between the predicted and actual values of \(Y\). This method is known as ordinary least squares.
+2. Assumptions: Multiple linear regression relies on several assumptions, including linearity (the relationship between \(Y\) and the \(X\) variables is linear), independence of errors (the errors are not
+correlated), homoscedasticity (the variance of errors is constant), and normally distributed errors.
+3. Interpretation of Coefficients: The coefficients (\(\beta_1, \beta_2, \ldots, \beta_n\)) provide insights into the strength and direction of the relationships between the independent variables and the dependent
+variable. A positive coefficient indicates a positive relationship, while a negative coefficient indicates a negative relationship. The magnitude of the coefficient represents the change in \(Y\) associated with a
+one-unit change in the corresponding \(X\) variable.
+4. Model Evaluation: Common metrics for evaluating the performance of a multiple linear regression model include mean squared error (MSE), \(R^2\) (coefficient of determination), and adjusted \(R^2\).
+MSE measures the average squared difference between predicted and actual values, while \(R^2\)quantifies the proportion of the variance in the dependent variable explained by the independentvariables

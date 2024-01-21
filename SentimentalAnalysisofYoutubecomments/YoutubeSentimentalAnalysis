@@ -1,0 +1,19 @@
+Importing the necessary Python packages: Before starting the analysis, you imported the required Python packages that provide the tools and functions needed for sentiment analysis.
+
+Importing YouTube comments data: imported the YouTube comments data into  code. The specific method or source of importing the data is not mentioned in  code snippet.
+
+Displaying the first 5 rows: You displayed the first 5 rows of the imported data to get an initial understanding of its structure and content.
+
+Extracting 1000 random samples from the data: You randomly extracted 1000 samples from the imported data. This step is likely done to reduce the computational load and focus the analysis on a manageable subset of the data.
+
+Calculating sentiment polarity for each comment: Sentiment polarity refers to the degree of positivity or negativity expressed in a comment. You calculated the sentiment polarity for each comment in the extracted samples.
+
+Adding the Sentiment Polarity column to the data:  added a new column to the data, named "Sentiment Polarity," which contains the calculated sentiment polarity values for each comment.
+
+Displaying positive comments: Displayed the comments that have a positive sentiment polarity. These comments are likely to express positive opinions or emotions.
+
+Displaying negative comments: Displayed the comments that have a negative sentiment polarity. These comments are likely to express negative opinions or emotions.
+
+Displaying neutral comments: Displayed the comments that have a neutral sentiment polarity. These comments are likely to be neutral or unbiased in their opinions or emotions.
+
+Calculating the count of positive, negative, and neutral comments: You calculated the count of positive, negative, and neutral comments in the extracted samples. This step provides an overview of the distribution of sentiments in the analyzed comments.

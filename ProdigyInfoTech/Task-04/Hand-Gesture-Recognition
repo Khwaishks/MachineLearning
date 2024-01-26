@@ -33,3 +33,9 @@ The models that were considered for this approach are:
 9. Support Vector Machine
 
 Stacking and Voting Based Classifiers were used to combine the models.
+
+🎯 Conclusion
+In conclusion, the repository provides a comprehensive analysis of hand gesture recognition models, highlighting the strengths and weaknesses of both the 
+CNN-based and ensembled-based approaches. This comparative study contributes to the ongoing research in the field of computer vision and gesture recognition, 
+with potential applications in sign language interpretation, 
+gaming devices, and other human-computer interaction systems.

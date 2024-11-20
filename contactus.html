@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .navbar {
+            background-color: #2c3e50;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .navbar li {
+            margin: 0 15px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 10px;
+        }
+        input, textarea, button {
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #2c3e50;
+            color: #ffffff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .social-icons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            color: #007BFF;
+            text-decoration: none;
+            font-size: 24px;
+        }
+        .map-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .map-container iframe {
+            width: 100%;
+            height: 300px;
+            border: 0;
+            border-radius: 5px;
+        }
+        .payment-section {
+            margin-top: 30px;
+            text-align: center;
+        }
+        .payment-section h2 {
+            margin-bottom: 10px;
+        }
+        .payment-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .payment-buttons a {
+            padding: 10px 20px;
+            border: 1px solid #2c3e50;
+            border-radius: 5px;
+            color: #2c3e50;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .payment-buttons a:hover {
+            background-color: #2c3e50;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="#contact-form">Contact Form</a></li>
+            <li><a href="#direct-contact">Direct Contact</a></li>
+            <li><a href="#social-media">Social Media</a></li>
+            <li><a href="#map">Find Us</a></li>
+            <li><a href="#support">Support Us</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h1>Contact Us</h1>
+        <p>If you have any questions, comments, or just want to get in touch, please fill out the form below. We’d love to hear from you!</p>
+
+        <form id="contact-form" action="/submit_contact" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <p id="direct-contact" style="text-align: center; margin-top: 20px;">
+            Or reach out to us directly:
+        </p>
+        <p style="text-align: center;">
+            <strong>Email:</strong> <a href="mailto:khwaishshahani@gmail.com">khwaishshahani@gmail.com</a> <br>
+            <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/khwaish-shahani" target="_blank">www.linkedin.com/in/khwaish-shahani</a>
+        </p>
+
+        <div class="social-icons" id="social-media">
+            <h2>Connect with Us</h2>
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram-square"></i></a>
+        </div>
+
+        <div class="map-container" id="map">
+            <h2>Find Us Here</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.123456789012!2d-123.1234567890!3d49.282729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54867123456789ab%3A0x1234567890abcdef!2sVancouver%2C%20BC%2C%20Canada!5e0!3m2!1sen!2sus!4v1612345678901!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <div class="payment-section" id="support">
+            <h2>Support Us</h2>
+            <p>If you'd like to support our work, you can make a donation using the buttons below:</p>
+            <div class="payment-buttons">
+                <a href="https://www.paypal.com" target="_blank">PayPal</a>
+                <a href="https://stripe.com" target="_blank">Stripe</a>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
